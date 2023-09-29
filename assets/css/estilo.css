@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+.conteiner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #F5F4F9;
+}
+
+.logo-foto {
+    background: #F5F4F9;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;   
+}
+
+.logo-coracao{
+    width: 600px;
+    right: 600px;
+    justify-content: center;
+    display: flex;
+}
+
+.card-login{
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 809px;
+    height: 627px;
+    border-radius: 24px 0 0 24px;
+    box-shadow: 5px 5px 1em #888;
+}
+
+.email{
+    position: relative;
+}
+
+.label-email{
+    left: 12px;
+    bottom: 53px;
+    position: absolute;
+    background: #FFFFFF;
+    color: 616161;
+}
+
+.senha{
+    position: relative;
+}
+
+.label-senha{
+    left: 12px;
+    bottom: 53px;
+    position: absolute;
+    background: #FFFFFF;
+    color: 616161;
+}
+
+.card-form {
+    padding: 20px;
+    width: 300px;
+}
+
+.card-form h1{
+    text-align: left;
+}
+
+.card-form form input, form textarea{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid #edebf6;
+    margin-bottom: 20px;
+}
+
+.suporte{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    margin-bottom: 30px;
+}
+
+.botao{
+    width: 300px;
+    height: 40px;
+    color: #FFFFFF;
+    background: #00c247;
+    border: 5px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.entao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #616161;
+    margin-bottom: 15px;
+}
+
+.linha{
+    width: 43px;
+    border-bottom: 1px solid #616161;
+}
+
+
+header{
+    height: 100px;
+    background:#ffffff;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding-right: 35px;
+    text-align: center;
+}
+
+.logo-home{
+    padding: 20px;
+}
+
+.logo-home img{
+    width: 300px;
+}
+
+.user-logo{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.user-logo span{
+    margin-left: 10px;
+}
+
+.linha-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linha-header-1{
+    width: 384px;
+    border-bottom: 5px solid #AA6F34;
+}
+
+.linha-header-2{
+    width: 384px;
+    border-bottom: 5px solid #D2772E;
+    ;
+}
+
+.linha-header-3{
+    width: 384px;
+    border-bottom: 5px solid #F48221;
+}
+
+.linha-header-4{
+    width: 384px;
+    border-bottom: 5px solid #FAA61A;
+}
+
+.linha-header-5{
+    width: 384px;
+    border-bottom: 5px solid #F9E423;
+}
+
+.menu-lateral {
+    width: 300px;
+    height: 800px;
+    background-color: #F9E423;
+}
+
+.opcao-menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.opcao-menu li a{
+    text-decoration: none;
+    color: #AA6F34;
+    display: block;
+    line-height: 72px;
+    width: 300px;
+    height: 72px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.opcao-menu li:hover{
+    width: 294px;
+    height: 72px;
+    background: #FAA61A;
+    border-left: 7px solid #F48221;
+}
+
+.opcao-menu li a:hover{
+    color: #ffffff;
+    font-size: 18px;
+}
