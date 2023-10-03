@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/estilo.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/estilo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="../assets/js/geral.js" defer></script>
     <title>Bem-Vindo</title>
 </head>
+
 <body>
         <header>
             <div class="logo-home">
-                <img src="../assets/img/logo.svg">
+                <img src="../assets/img/logo.svg" />
             </div>
             <div class="user-logo">
-                <img src="../assets/img/user.svg">
-                <span>Nicolas</span>
+                <img src="../assets/img/user.svg" />
+                <span>Nicolas Vinicius</span>
             </div>
         </header>
         <div class="linha-header">
@@ -26,13 +31,49 @@
             <div class="linha-header-4"></div>
             <div class="linha-header-5"></div>
         </div>
+    <nav>
+        <div class="sidebar active">
+            <div class="menu-lateral">
+                <div class="opcao-menu"><a href=""><span class="material-symbols-outlined">
+                            home
+                        </span>
+                        Início</a></div>
+                <div class="opcao-menu">
+                    <a class="acordion-usuarios"><span class="material-symbols-outlined">
+                            person_add
+                        </span>Usuários<span class="material-symbols-outlined icone">
+                            chevron_right
+                        </span></a>
+                    <div class="submenu">
+                        <a href="#" class="opcao-submenu">Professor</a>
+                        <a href="#" class="opcao-submenu">Aluno</a>
+                    </div>
+                </div>
+                <div class="opcao-menu"><a href=""><span class="material-symbols-outlined">
+                            favorite
+                        </span>
+                        Emocionômetro</a></div>
+                <div class="final">
+                    <div class="opcao-menu"><a href=""><span class="material-symbols-outlined">
+                                person
+                            </span>
+                            Meu perfil</a></div>
+                    <div class="opcao-menu"><a href="../pages/login.html"><span class="material-symbols-outlined">
+                                logout
+                            </span>
+                            Sair</a></div>
+                </div>
+    </nav>
 
-        <div class="menu-lateral">
-            <ul class="opcao-menu">
-                <li><a href="../pages/login.html"> Inicio</a></li>
-                <li><a href="#">Usuários</a></li>
-                <li><a href="#"><img src="../assets/img/heart.svg"> Emocionômetro</a></li>
-            </ul>
+    <div class="content">
+        <div class="centro">
+            <h2>Olá, Bem vindo ao seu</h2>
+            <h1>EMOCIONÔMETRO DE GRUPO</h1>
         </div>
+        <div class="faleconosco">
+            <img src="../assets/img/faleconosco.svg">
+        </div>
+    </div>
 </body>
+
 </html>

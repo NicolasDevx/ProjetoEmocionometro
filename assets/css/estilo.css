@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Nunito", sans-serif;
+    box-sizing: border-box;
 }
 
 .conteiner {
@@ -16,14 +17,13 @@ body {
     align-items: center;
     display: flex;
     width: 100%;
+    height: 100%;
     justify-content: center;   
 }
 
 .logo-coracao{
-    width: 600px;
-    right: 600px;
-    justify-content: center;
-    display: flex;
+    width: 100vh;
+    right: 100vh;
 }
 
 .card-login{
@@ -33,7 +33,7 @@ body {
     text-align: center;
     justify-content: center;
     width: 809px;
-    height: 627px;
+    height: 100vh;
     border-radius: 24px 0 0 24px;
     box-shadow: 5px 5px 1em #888;
 }
@@ -69,6 +69,11 @@ body {
 
 .card-form h1{
     text-align: left;
+}
+
+.card-form img{
+    width: 250px;
+    height: 62.79px;
 }
 
 .card-form form input, form textarea{
@@ -111,15 +116,15 @@ body {
     border-bottom: 1px solid #616161;
 }
 
-
 header{
     height: 100px;
     background:#ffffff;
-    justify-content: space-between;
-    align-items: center;
+    justify-content:space-between;
     display: flex;
     padding-right: 35px;
     text-align: center;
+    position: relative;
+    z-index:1;
 }
 
 .logo-home{
@@ -127,7 +132,7 @@ header{
 }
 
 .logo-home img{
-    width: 300px;
+    width: 280px;
 }
 
 .user-logo{
@@ -144,66 +149,139 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index:1;
 }
 
 .linha-header-1{
-    width: 384px;
+    width: 100%;
     border-bottom: 5px solid #AA6F34;
 }
 
 .linha-header-2{
-    width: 384px;
+    width: 100%;
     border-bottom: 5px solid #D2772E;
     ;
 }
 
 .linha-header-3{
-    width: 384px;
+    width: 100%;
     border-bottom: 5px solid #F48221;
 }
 
 .linha-header-4{
-    width: 384px;
+    width: 100%;
     border-bottom: 5px solid #FAA61A;
 }
 
 .linha-header-5{
-    width: 384px;
+    width: 100%;
     border-bottom: 5px solid #F9E423;
 }
 
-.menu-lateral {
+.sidebar{
+    background: #F9E423;
     width: 300px;
-    height: 800px;
-    background-color: #F9E423;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    overflow-y: auto;
+    transition: 0.6s ease;
 }
 
-.opcao-menu{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.sidebar .menu-lateral{
+    width: 100%;
+    margin-top: 120px;
 }
 
+.sidebar .menu-lateral .opcao-menu{
+    position:relative;
+    cursor:pointer;
+}
 
-.opcao-menu li a{
-    text-decoration: none;
+.sidebar .menu-lateral .opcao-menu a{
     color: #AA6F34;
-    display: block;
-    line-height: 72px;
-    width: 300px;
-    height: 72px;
-    margin-left: 20px;
     font-size: 18px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 40px;
+    line-height: 60px;
+    border-left: 7px solid #F9E423;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
 }
 
-.opcao-menu li:hover{
-    width: 294px;
-    height: 72px;
+.sidebar .menu-lateral .opcao-menu a:hover{
     background: #FAA61A;
+    transition: 0.3s ease;
     border-left: 7px solid #F48221;
-}
-
-.opcao-menu li a:hover{
     color: #ffffff;
     font-size: 18px;
+}
+
+.sidebar .menu-lateral .opcao-menu span{
+    margin-right: 15px;
+    font-size: 34px;
+}
+
+.sidebar .menu-lateral .opcao-menu a .icone{
+    position: absolute;
+    right:0;
+    margin: 20px;
+    transition: 0.3s ease;
+}
+
+.sidebar .menu-lateral .opcao-menu .submenu{
+    display:none;
+}
+
+.sidebar .menu-lateral .opcao-menu .submenu a{
+    padding-left: 80px;
+}
+
+.sidebar .menu-lateral .opcao-menu .submenu a:hover{
+    background: #F48221;
+    transition: 0.3s ease;
+}
+
+.final{
+    width: 300px;
+    position: fixed;
+    bottom: 20px;
+}
+
+.rotate{
+    transform: rotate(90deg);
+}
+
+.content{
+    display: flex;
+    margin-left: 300px;
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.centro{
+    text-align: center;
+}
+
+.centro h1{
+    color: #888;
+}
+
+.centro h2{
+    color:#AA6F34
+}
+
+.faleconosco{
+    position: fixed;
+    bottom: 30px;
+    right: 20px
+}
+
+.faleconosco img{
+    width: 180px;
+    height: 100px;
 }
