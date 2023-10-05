@@ -1,0 +1,11 @@
+{
+  "professores": [
+    {
+      "nome": "Nicolas Vinícius ",
+      "perfil": "cordenador",
+      "disciplina": "Cobol",
+      "ativo": "Ativo",
+      "id": 1
+    }
+  ]
+}

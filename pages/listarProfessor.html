@@ -10,8 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="../assets/js/listarProfessor.js" defer></script>
+    <script src="../assets/js/apagarProfessor.js" defer></script>
     <script src="../assets/js/geral.js" defer></script>
-    <title>Bem-Vindo</title>
+    <title>Usuarios - Professor</title>
 </head>
 
 <body id="principal">
@@ -34,7 +36,7 @@
     <nav>
         <div class="sidebar">
             <div class="menu-lateral">
-                <div class="opcao-menu"><a href=""><span class="material-symbols-outlined">
+                <div class="opcao-menu"><a href="../pages/home.html"><span class="material-symbols-outlined">
                             home
                         </span>
                         Início</a></div>
@@ -63,19 +65,32 @@
                             </span>
                             Sair</a></div>
                 </div>
-            </div>
-        </div>
     </nav>
-
-        <div class="content">
-            <div class="centro">
-                <h2>Olá, Bem vindo ao seu</h2>
-                <h1>EMOCIONÔMETRO DE GRUPO</h1>
+    <div class="central">
+        <h1> Usuários > Professor</h1>
+        <div class="btnBuscar">
+            <div id="buscarProfessor">
+                <input type="text" id="buscarProf" placeholder="Pesquise uma palavra-chave">
+            </div>      
+            <div class="btn-cadastrar">
+            <a href="../pages/cadastrarProfessor.html"> <button class="btnPagina" onclick="novoProfessor()"> + Novo usuário</button></a>
             </div>
-        <div class="faleconosco">
-            <img src="../assets/img/faleconosco.svg">
         </div>
+        <div class="professor-get">
+            <div class="tabela">
+                <table class="table">
+                    <thead>
+                        <th>Nome</th>
+                        <th>Disciplina</th>
+                        <th>Perfil</th>
+                        <th>Ativo</th>
+                        <th>Ações</th>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
         </div>
+    </div>
 </body>
 
 </html>

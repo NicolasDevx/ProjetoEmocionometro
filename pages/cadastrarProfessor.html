@@ -10,8 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="../assets/js/cadastrarProfessor.js" defer></script>
     <script src="../assets/js/geral.js" defer></script>
-    <title>Bem-Vindo</title>
+    <title>Usuarios - Professor - Cadastrar</title>
 </head>
 
 <body id="principal">
@@ -34,7 +35,7 @@
     <nav>
         <div class="sidebar">
             <div class="menu-lateral">
-                <div class="opcao-menu"><a href=""><span class="material-symbols-outlined">
+                <div class="opcao-menu"><a href="../pages/home.html"><span class="material-symbols-outlined">
                             home
                         </span>
                         Início</a></div>
@@ -63,19 +64,41 @@
                             </span>
                             Sair</a></div>
                 </div>
-            </div>
-        </div>
     </nav>
-
-        <div class="content">
-            <div class="centro">
-                <h2>Olá, Bem vindo ao seu</h2>
-                <h1>EMOCIONÔMETRO DE GRUPO</h1>
-            </div>
-        <div class="faleconosco">
-            <img src="../assets/img/faleconosco.svg">
+    <div class="central">
+        <div class="voltar">
+            <a href="../pages/listarProfessor.html"> <span class="material-icons-outlined">
+                arrow_back
+                </span></a>
         </div>
+        <h1> Novo Usuário > Professor </h1>    
+        
+        <div class="card-novo-professor">
+            <h4>Dados do Usuário</h4>
+            <form id="formulario">
+                <div class="item">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+                <div class="item">
+                    <label for="perfil">Perfil</label>
+                    <select name="select" id="perfil" required>
+                        <option value="Professor">Professor</option>
+                        <option value="Cordenador">Coordenador</option>
+                      </select>
+                </div>
+                <div class="item">
+                    <label for="disciplina">Disciplina</label>
+                    <input type="text" name="disciplina" id="disciplina" required>
+                </div>
+                <div class="item">
+                    <label for="ativo">Ativo</label>
+                    <input type="checkbox" id="ativo" name="ativo" value="Ativo">
+                </div>
+                <button class="btnPagina" type="submit">Cadastrar</button>
+            </form>
         </div>
+    </div>
 </body>
 
 </html>
