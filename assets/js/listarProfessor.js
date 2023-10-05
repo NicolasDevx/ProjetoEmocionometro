@@ -1,14 +1,14 @@
-const getProfessor = async ()=>{
+const getProfessor = async () => {
     const apiURL = await fetch('http:///localhost:3000/professores')
     const professores = await apiURL.json()
-     mostrarProfessores(professores)
+    mostrarProfessores(professores)
 }
 
-const mostrarProfessores=(professores)=>{
-    const tabela=document.querySelector('tbody')
-    tabela.innerHTML=''
+const mostrarProfessores = (professores) => {
+    const tabela = document.querySelector('tbody')
+    tabela.innerHTML = ''
 
-    professores.forEach((professores)=>{
+    professores.forEach((professores) => {
         const professoresHTML = `
         <tr>
             <td>${professores.nome}</div></td>
@@ -21,7 +21,7 @@ const mostrarProfessores=(professores)=>{
             </td>
 
         </tr>
-        ` 
+        `
         tabela.innerHTML = tabela.innerHTML + professoresHTML
     })
 }

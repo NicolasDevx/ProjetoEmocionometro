@@ -244,7 +244,7 @@ header {
     transition: 0.3s ease;
 }
 
-.sidebar .menu-lateral .final{
+.sidebar .menu-lateral .final {
     width: 300px;
     position: fixed;
     bottom: 20px;
@@ -376,23 +376,23 @@ header {
     box-shadow: 5px 5px 1em #888;
 }
 
-.card-novo-professor h4{
+.card-novo-professor h4 {
     padding: 20px;
 }
 
-#formulario{
+#formulario {
     display: flex;
     margin-left: 20px;
     margin-top: 30px;
     margin-bottom: 20px;
 }
 
-#formulario label{
+#formulario label {
     display: block;
     font-weight: bold
 }
 
-#formulario button{
+#formulario button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -400,6 +400,6 @@ header {
     top: 430px;
 }
 
-.item{
+.item {
     margin-right: 150px;
 }
