@@ -47,10 +47,10 @@
                         </span></a>
                     <div class="submenu">
                         <a href="../pages/listarProfessor.html" class="opcao-submenu">Professor</a>
-                        <a href="#" class="opcao-submenu">Aluno</a>
+                        <a href="../pages/listarAluno.html" class="opcao-submenu">Aluno</a>
                     </div>
                 </div>
-                <div class="opcao-menu"><a href=""><span class="material-symbols-outlined">
+                <div class="opcao-menu"><a href="../pages/emocionometro.html"><span class="material-symbols-outlined">
                             favorite
                         </span>
                         Emocionômetro</a></div>
@@ -65,20 +65,19 @@
                             Sair</a></div>
                 </div>
     </nav>
-    <div class="central">
+    <div class="central-pagina">
         <div class="voltar">
-            <a href="../pages/listarProfessor.html"> <span class="material-icons-outlined">
+            <a href="../pages/listarProfessor.html"> <span class="material-symbols-outlined">
                     arrow_back
                 </span></a>
+            <h1> Novo Usuário > Professor </h1>
         </div>
-        <h1> Novo Usuário > Professor </h1>
-
         <div class="card-novo-professor">
             <h4>Dados do Usuário</h4>
             <form id="formulario">
                 <div class="item">
                     <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome" required>
+                    <input class="input-professor" type="text" name="nome" id="nome" required>
                 </div>
                 <div class="item">
                     <label for="perfil">Perfil</label>
@@ -89,16 +88,18 @@
                 </div>
                 <div class="item">
                     <label for="disciplina">Disciplina</label>
-                    <input type="text" name="disciplina" id="disciplina" required>
+                    <input class="input-professor" type="text" name="disciplina" id="disciplina" required>
                 </div>
                 <div class="item">
-                    <label for="ativo">Ativo</label>
-                    <input type="checkbox" id="ativo" name="ativo" value="Ativo">
-                </div>
-                <button class="btnPagina" type="submit">Cadastrar</button>
+                    <label for="toggle">Ativo</label>
+                    <label class="toggle">
+                      <input type="checkbox" id="toggle" name="ativo">
+                      <span class="slider"></span>
+                    </label>
+                  </div>
+                <button class="btnPagina" type="submit">Salvar</button>
             </form>
         </div>
     </div>
 </body>
-
 </html>

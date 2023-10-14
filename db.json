@@ -1,10 +1,46 @@
 {
   "professores": [
     {
+      "nome": "ativo",
+      "disciplina": "ativo",
+      "perfil": "Professor",
+      "ativo": true,
+      "id": 1
+    },
+    {
+      "nome": "teste",
+      "disciplina": "teste",
+      "perfil": "Professor",
+      "ativo": true,
+      "id": 2
+    },
+    {
       "nome": "Nicolas Vinícius ",
-      "perfil": "cordenador",
+      "perfil": "Professor",
+      "disciplina": "teste",
+      "ativo": false,
+      "id": 3
+    },
+    {
+      "nome": "teste4",
+      "perfil": "Professor",
+      "disciplina": "teste4",
+      "ativo": true,
+      "id": 4
+    },
+    {
+      "nome": "teste1",
+      "perfil": "Professor",
       "disciplina": "Cobol",
-      "ativo": "Ativo",
+      "ativo": false,
+      "id": 5
+    }
+  ],
+  "alunos": [
+    {
+      "nome": "teste",
+      "turma": "teste",
+      "ativo": true,
       "id": 1
     }
   ]

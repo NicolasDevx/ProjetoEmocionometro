@@ -5,6 +5,11 @@ body {
     overflow: hidden;
 }
 
+input {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
 .conteiner {
     width: 100%;
     display: flex;
@@ -56,7 +61,7 @@ body {
 
 .label-senha {
     left: 12px;
-    bottom: 53px;
+    bottom: 55px;
     position: absolute;
     background: #FFFFFF;
     color: 616161;
@@ -83,6 +88,7 @@ form textarea {
     border-radius: 10px;
     border: 2px solid #edebf6;
     margin-bottom: 20px;
+    padding: 1px 10px 1px;
 }
 
 .suporte {
@@ -219,6 +225,14 @@ header {
     font-size: 18px;
 }
 
+.sidebar .menu-lateral .opcao-menu a.active{
+    background: #FAA61A;
+    transition: 0.5s ease;
+    border-left: 7px solid #F48221;
+    color: #ffffff;
+    font-size: 18px;
+}
+
 .sidebar .menu-lateral .opcao-menu span {
     margin-right: 15px;
     font-size: 34px;
@@ -233,10 +247,12 @@ header {
 
 .sidebar .menu-lateral .opcao-menu .submenu {
     display: none;
+    background: #FAA61A;
 }
 
 .sidebar .menu-lateral .opcao-menu .submenu a {
     padding-left: 90px;
+    border-left: 7px solid #F48221;
 }
 
 .sidebar .menu-lateral .opcao-menu .submenu a:hover {
@@ -289,51 +305,59 @@ header {
     height: 100px;
 }
 
+.professor-get {
+    max-height: 380px;
+    overflow-y: auto;
+}
+
 .tabela {
     justify-content: space-between;
-    margin-top: 40px;
-    margin-left: 50px;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
-.table {
+.tabela .table {
     width: 100%;
-    border-collapse: separate;
-    border-spacing: 10px;
-    margin: 0 0 0 0;
+    border-collapse: collapse;
+    border-right: 10px;
+    border-radius: 5px 0 0 5px;
 }
 
-.table thead th {
+.tabela .table thead th {
     padding: 10px;
-    text-align: left;
+    text-align: center;
     color: #000000;
     justify-content: space-around;
 }
 
-.table tbody td {
-    border: 1px solid #ececec;
+.tabela .table tbody tr {
+    text-align: center;
+    background: #ffffff;
+    border: 10px solid #F5F4F9;
+}
+
+.tabela .table tbody td {
+    background: #ffffff;
     padding: 10px;
 }
 
-.table tbody tr:nth-child(even) {
-    background: #ececec;
-}
-
-.central {
+.central-pagina {
     margin-left: 300px;
     background: #F5F4F9;
     height: 100vh;
 }
 
-.central h1 {
+.central-pagina h1 {
     margin: 0%;
     padding: 20px;
+    margin-left: 15px;
 }
 
-.btnBuscar {
+.btnBuscar-btnCadastrar {
     display: flex;
-    margin-left: 15px;
+    margin-left: 37px;
     margin-right: 50px;
-    margin-top: 30px;
     justify-content: space-between;
     align-items: center;
     text-align: center;
@@ -348,23 +372,89 @@ header {
     border-radius: 10px;
     margin-bottom: 15px;
     cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-cadastrar button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.btn-cadastrar img {
+    margin-right: 10px;
+}
+
+.btn-cadastrar a {
+    text-decoration: none;
 }
 
 .buscarProfessor {
+    border-radius: 9px;
     background: #ffffff;
-    border: solid 1px;
-    border-radius: 10px;
-    width: 300px;
+    border: 1.5px solid #d3d3d3;
+    height: 32px;
+    width: 310px;
 }
 
 #buscarProf {
-    border-radius: 15px;
-    background: #ffffff;
-    padding-left: 10px;
-    font-size: 14px;
-    border: none;
     height: 32px;
+    background: transparent;
     width: 260px;
+    border: none;
+    padding: 1px 10px 1px;
+    float: left;
+}
+
+#buscarImg {
+    height: 20px;
+    border: none;
+    margin: 5px auto;
+    cursor: pointer;
+}
+
+.voltar {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.voltar a {
+    text-decoration: none;
+}
+
+.voltar span {
+    color: #616161;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EEEEEE;
+    border-radius: 100px;
+    width: 48px;
+    height: 48px;
+}
+
+.editarbtn {
+    background-image: url('../img/iconeditar.svg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+.excluirbtn {
+    background-image: url('../img/iconexcluir.svg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
 }
 
 .card-novo-professor {
@@ -373,7 +463,7 @@ header {
     background: #ffffff;
     height: 300px;
     border-radius: 24px 24px 24px 24px;
-    box-shadow: 5px 5px 1em #888;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .card-novo-professor h4 {
@@ -389,7 +479,71 @@ header {
 
 #formulario label {
     display: block;
-    font-weight: bold
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#formulario .input-professor {
+    width: 150px;
+    height: 30px;
+    border-radius: 7px;
+    border: 2px solid #edebf6;
+}
+
+#formulario select {
+    height: 35px;
+    border-radius: 7px;
+    border: 2px solid #edebf6;
+    width: 150px;
+}
+
+.toggle-img{
+    width: 45px;
+    height: 30px;
+    margin-top: 5%;
+}
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.toggle input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f90101;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #4CAF50;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
 }
 
 #formulario button {
@@ -401,5 +555,66 @@ header {
 }
 
 .item {
-    margin-right: 150px;
+    margin-right: 100px;
+}
+
+.central-pagina .conteiner-emocionometro{
+    display: flex;
+}
+
+.central-pagina .conteiner-emocionometro .card-grafico-emocao {
+    margin-left: 30px;
+    margin-right: 30px;
+    background: #ffffff;
+    height: 68vh;
+    width: 120vh;
+    border-radius: 24px 24px 24px 24px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.central-pagina .conteiner-emocionometro .card-grafico-emocao h3{
+ padding: 1%;
+}
+
+.central-pagina .conteiner-emocionometro .card-grafico-emocao img{
+    margin-left: 20px;
+    height: 80%;
+}
+
+.central-pagina .conteiner-emocionometro .card-grafico-registro {
+    margin-right: 30px;
+    background: #ffffff;
+    width: 50vh;
+    height: 25vh;
+    border-radius: 24px 24px 24px 24px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.central-pagina .conteiner-emocionometro .card-grafico-registro h3{
+    padding: 20px;
+    margin: 0%;
+}
+
+.central-pagina .conteiner-emocionometro .card-grafico-registro h1{
+    font-size: 60px;
+}
+
+.central-pagina .conteiner-emocionometro .card-grafico-percetual {
+    margin-right: 30px;
+    margin-top: 15px;
+    background: #ffffff;
+    height: 40vh;
+    border-radius: 24px 24px 24px 24px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.central-pagina .conteiner-emocionometro .card-grafico-percetual h3{
+    margin-left: 20px;
+    margin-top: 20px;
+    position: absolute;
+}
+
+.central-pagina .conteiner-emocionometro .card-grafico-percetual img{
+    width: 70%;
+    position: relative;
+    margin-left: 30px;
 }
