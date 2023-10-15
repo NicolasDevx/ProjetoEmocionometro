@@ -21,11 +21,11 @@ const carregarFormularioAluno = async (aluno)=>{
     const ativo = aluno.ativo === true
 
     if (ativo) {
-        toggleEdicao.checked = true;
-        toggleEdicao.parentElement.classList.add(true);
+        toggleEdicao.checked = true
+        toggleEdicao.parentElement.classList.add(true)
     } else {
-        toggleEdicao.checked = false;
-        toggleEdicao.parentElement.classList.add(false);
+        toggleEdicao.checked = false
+        toggleEdicao.parentElement.classList.add(false)
     }
 }
 
@@ -53,7 +53,7 @@ formulario.addEventListener('submit',(e)=>{
 
     const nome = formulario.elements['nome'].value
     const turma = formulario.elements['turma'].value
-    const ativo = formulario.elements['ativo'].checked ? true : false;
+    const ativo = formulario.elements['ativo'].checked ? true : false
 
     const aluno = {
         nome,

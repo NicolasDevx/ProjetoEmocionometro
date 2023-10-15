@@ -22,10 +22,10 @@ const carregarFormularioProfessor = async (professor)=>{
     const ativo = professor.ativo === true
 
     if (ativo) {
-        toggleEdicao.checked = true;
+        toggleEdicao.checked = true
         toggleEdicao.parentElement.classList.add(true)
     } else {
-        toggleEdicao.checked = false;
+        toggleEdicao.checked = false
         toggleEdicao.parentElement.classList.add(false)
 
     }
@@ -56,7 +56,7 @@ formulario.addEventListener('submit',(e)=>{
     const nome = formulario.elements['nome'].value
     const disciplina = formulario.elements['disciplina'].value
     const perfil = formulario.elements['perfil'].value
-    const ativo = formulario.elements['ativo'].checked ? true : false;
+    const ativo = formulario.elements['ativo'].checked ? true : false
 
     const professor = {
         nome,
