@@ -305,7 +305,7 @@ header {
     height: 100px;
 }
 
-.professor-get {
+.listar-get {
     max-height: 380px;
     overflow-y: auto;
 }
