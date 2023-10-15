@@ -4,6 +4,16 @@ const buscarAlunos = async () => {
     const response = await fetch(apiURL)
     const alunos = await response.json()
     mostrarAlunos(alunos)
-  };
 
+    const pesquisa = document.getElementById('pesquisa')
+    pesquisa.innerHTML = ""
+
+    if (professores.length === 0) {
+      const pesquisa = document.getElementById('pesquisa')
+      pesquisa.innerHTML = "Desculpa! Nenhum resultado encontrado."
+      console.log(pesquisa) 
+    } else {
+      mostrarAlunos(alunos)
+    }
+}
   document.getElementById('buscarImg').addEventListener('click', buscarAlunos)

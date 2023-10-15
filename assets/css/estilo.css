@@ -310,6 +310,14 @@ header {
     overflow-y: auto;
 }
 
+#pesquisa{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 .tabela {
     justify-content: space-between;
     margin-top: 20px;
@@ -556,6 +564,18 @@ input:checked+.slider:before {
 
 .item {
     margin-right: 100px;
+}
+
+.central-pagina .topo-emocionometro{
+    display: flex;
+    align-items: center;
+}
+
+.central-pagina .topo-emocionometro img{
+    position: relative;
+    margin-left: 30%;
+    width: 20%;
+    height: 20%;
 }
 
 .central-pagina .conteiner-emocionometro{
