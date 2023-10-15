@@ -8,8 +8,7 @@ const buscarAlunos = async () => {
     const pesquisa = document.getElementById('pesquisa')
     pesquisa.innerHTML = ""
 
-    if (professores.length === 0) {
-      const pesquisa = document.getElementById('pesquisa')
+    if (alunos.length === 0) {
       pesquisa.innerHTML = "Desculpa! Nenhum resultado encontrado."
       console.log(pesquisa) 
     } else {

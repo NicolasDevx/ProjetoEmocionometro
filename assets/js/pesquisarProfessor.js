@@ -15,5 +15,4 @@ const buscarProfessores = async () => {
       mostrarProfessores(professores)
     }
 }
-
   document.getElementById('buscarImg').addEventListener('click', buscarProfessores)
