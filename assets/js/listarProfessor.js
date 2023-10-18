@@ -28,6 +28,28 @@ const mostrarProfessores = (professores) => {
 
 getProfessor()
 
+const ordenar = document.getElementById('ordenar-nome')
+const seta = ordenar.querySelector('.seta')
+let ordenarAsc = true
+
+ordenar.addEventListener('click', () => {
+    ordenarNome()
+    mudarSeta()
+})
+
+const ordenarNome = async () => {
+    const alterarOrdem = ordenarAsc ? 'asc' : 'desc'
+    const apiURL = await fetch(`http://localhost:3000/professores?_sort=nome&_order=${alterarOrdem}`)
+    const professores = await apiURL.json()
+    mostrarProfessores(professores)
+
+    ordenarAsc = !ordenarAsc
+}
+
+const mudarSeta = () => {
+    seta.textContent = ordenarAsc ? 'arrow_drop_up' : 'arrow_drop_down'
+}
+
 const editarProfessor = (id) => {
     window.location = `editarProfessor.html?id=${id}`
 }

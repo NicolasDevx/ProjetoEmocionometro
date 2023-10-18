@@ -27,6 +27,27 @@ const mostrarAlunos = (alunos) => {
 
 getAlunos()
 
+const ordenar = document.getElementById('ordenar-nome')
+const seta = ordenar.querySelector('.seta')
+let ordenarAsc = true
+
+ordenar.addEventListener('click', () => {
+    ordenarNome()
+    mudarSeta()
+})
+const ordenarNome = async () => {
+    const alterarOrdem = ordenarAsc ? 'asc' : 'desc'
+    const apiURL = await fetch(`http://localhost:3000/alunos?_sort=nome&_order=${alterarOrdem}`)
+    const alunos = await apiURL.json()
+    mostrarAlunos(alunos)
+
+    ordenarAsc = !ordenarAsc
+}
+
+const mudarSeta = () => {
+    seta.textContent = ordenarAsc ? 'arrow_drop_up' : 'arrow_drop_down'
+}
+
 const editarAluno = (id) => {
     window.location = `editarAluno.html?id=${id}`
 }

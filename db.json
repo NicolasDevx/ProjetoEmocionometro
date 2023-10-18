@@ -1,38 +1,38 @@
 {
   "professores": [
     {
-      "nome": "ativo",
+      "nome": "Arthur",
       "disciplina": "ativo",
       "perfil": "Professor",
       "ativo": true,
       "id": 1
     },
     {
-      "nome": "teste",
+      "nome": "Pedro",
       "disciplina": "teste",
       "perfil": "Professor",
       "ativo": true,
       "id": 2
     },
     {
-      "nome": "Nicolas Vinícius ",
-      "perfil": "Professor",
-      "disciplina": "teste",
-      "ativo": false,
+      "nome": "Tio Marcio",
+      "disciplina": "CEO",
+      "perfil": "Cordenador",
+      "ativo": true,
       "id": 3
     },
     {
-      "nome": "teste4",
-      "perfil": "Professor",
+      "nome": "Nicolas",
       "disciplina": "teste4",
+      "perfil": "Professor",
       "ativo": true,
       "id": 4
     },
     {
-      "nome": "teste1",
-      "perfil": "Professor",
+      "nome": "Jose",
       "disciplina": "Cobol",
-      "ativo": false,
+      "perfil": "Professor",
+      "ativo": true,
       "id": 5
     }
   ],
@@ -42,6 +42,12 @@
       "turma": "teste",
       "ativo": true,
       "id": 1
+    },
+    {
+      "nome": "Arthur",
+      "turma": "sadfas",
+      "ativo": false,
+      "id": 2
     }
   ]
 }

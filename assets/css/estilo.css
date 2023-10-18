@@ -350,6 +350,11 @@ header {
     padding: 10px;
 }
 
+.seta {
+    cursor: pointer;
+}
+
+
 .central-pagina {
     margin-left: 300px;
     background: #F5F4F9;
