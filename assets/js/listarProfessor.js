@@ -16,8 +16,14 @@ const mostrarProfessores = (professores) => {
             <td>${professores.perfil}</td>
             <td>${professores.ativo ? "<img src='../assets/img/ativo.svg' class='toggle-img'" : "<img src='../assets/img/inativo.svg' class='toggle-img'"}">
             <td>
+            <div class="tooltip-editar">
             <button class="editarbtn" onclick="editarProfessor(${professores.id})"></button>
+            <span class="tooltiptext">Editar</span>
+            </div>
+            <div class="tooltip-excluir">
             <button class="excluirbtn" onclick="excluirProfessor(${professores.id})"></button>
+            <span class="tooltiptext">Excluir</span>
+            </div>
             </td>
         </tr>
         `

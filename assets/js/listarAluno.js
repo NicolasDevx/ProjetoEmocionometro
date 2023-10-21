@@ -15,8 +15,13 @@ const mostrarAlunos = (alunos) => {
             <td>${alunos.turma}</td>
             <td>${alunos.ativo ? "<img src='../assets/img/ativo.svg' class='toggle-img'" : "<img src='../assets/img/inativo.svg' class='toggle-img'"}">
             <td>
+            <div class="tooltip-editar">
             <button class="editarbtn" onclick="editarAluno(${alunos.id})"></button>
+            <span class="tooltiptext">Editar</span>
+            </div>
+            <div class="tooltip-excluir">
             <button class="excluirbtn" onclick="excluirAluno(${alunos.id})"></button>
+            <span class="tooltiptext">Excluir</span>
             </td>
 
         </tr>
