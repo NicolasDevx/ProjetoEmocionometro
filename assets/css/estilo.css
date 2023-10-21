@@ -61,7 +61,7 @@ input {
 
 .senha span {
     position: absolute;
-    left: 290px;
+    left: 260px;
     bottom: 30px;
     color: #616161;
     cursor: pointer;
@@ -89,9 +89,8 @@ input {
     height: 62.79px;
 }
 
-.card-form form input,
-form textarea {
-    width: 300px;
+.card-form form input {
+    width: 270px;
     height: 40px;
     border-radius: 10px;
     border: 2px solid #edebf6;

@@ -1,11 +1,25 @@
 {
   "professores": [
     {
-      "nome": "teste",
-      "perfil": "Cordenador",
-      "disciplina": "teste",
+      "nome": "Breno",
+      "perfil": "Professor",
+      "disciplina": "HTML",
       "ativo": true,
       "id": 1
+    },
+    {
+      "nome": "Matheus",
+      "disciplina": "CSS",
+      "perfil": "Professor",
+      "ativo": false,
+      "id": 2
+    },
+    {
+      "nome": "Nicolas Vinícius ",
+      "disciplina": "Cobol",
+      "perfil": "Cordenador",
+      "ativo": false,
+      "id": 3
     }
   ],
   "alunos": [
@@ -20,8 +34,8 @@
     {
       "nome": "Nicolas Vinicius",
       "email": "nicolas.vinicius@outlook.com",
-      "celular": "16996237678",
-      "telefone": "16996237678",
+      "celular": "55555555",
+      "telefone": "66666666",
       "senha": "123",
       "id": 1
     }
