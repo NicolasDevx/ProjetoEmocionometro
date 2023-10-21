@@ -59,7 +59,7 @@ input {
     position: relative;
 }
 
-.senha span{
+.senha span {
     position: absolute;
     left: 290px;
     bottom: 30px;
@@ -200,7 +200,7 @@ form textarea {
     }
 }
 
-.centro-loading .card-loading .texto{
+.centro-loading .card-loading .texto {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -742,15 +742,16 @@ input:checked+.slider:before {
     margin-left: 30px;
 }
 
-.central-pagina .dados-perfil{
+.central-pagina .dados-perfil {
     display: flex;
 }
-.central-pagina .dados-perfil .centro-esquerda{
+
+.central-pagina .dados-perfil .centro-esquerda {
     width: 300px;
     height: 100vh;
 }
 
-.central-pagina .dados-perfil .centro-esquerda .botao-perfil{
+.central-pagina .dados-perfil .centro-esquerda .botao-perfil {
     width: 250px;
     height: 55px;
     color: #FFFFFF;
@@ -764,16 +765,17 @@ input:checked+.slider:before {
     margin-top: 20px;
 }
 
-.central-pagina .dados-perfil .centro-direita{
+.central-pagina .dados-perfil .centro-direita {
     width: 300px;
     height: 100vh;
     margin-top: 70px;
 }
-.central-pagina .dados-perfil .centro-direita .label-perfil{
+
+.central-pagina .dados-perfil .centro-direita .label-perfil {
     width: 40px;
 }
 
-.central-pagina .dados-perfil .centro-direita label-input{
+.central-pagina .dados-perfil .centro-direita label-input {
     display: flex;
     align-items: center;
     margin-top: 10px;
@@ -781,7 +783,7 @@ input:checked+.slider:before {
     margin-left: 50px;
 }
 
-.central-pagina .dados-perfil .centro-direita input[type="text"]{
+.central-pagina .dados-perfil .centro-direita input[type="text"] {
     width: 170px;
     padding: 8px;
     border: none;
@@ -791,21 +793,21 @@ input:checked+.slider:before {
     text-align: center;
 }
 
-.central-pagina .dados-perfil .centro-direita .label-perfil-senha{
+.central-pagina .dados-perfil .centro-direita .label-perfil-senha {
     display: block;
     margin-top: 10px;
     color: #333;
 }
 
-.central-pagina .dados-perfil .centro-direita .input-perfil-senha{
-width: 100%;
-padding: 8px;
-margin-top: 5px;
-border: 1px solid #ccc;
-border-radius: 5px;
+.central-pagina .dados-perfil .centro-direita .input-perfil-senha {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.central-pagina .dados-perfil .centro-direita button{
+.central-pagina .dados-perfil .centro-direita button {
     margin-top: 20px;
 }
 
@@ -826,4 +828,3 @@ border-radius: 5px;
 .alerta.show {
     display: block;
 }
-

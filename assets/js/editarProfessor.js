@@ -1,23 +1,23 @@
 const formulario = document.getElementById('formulario')
-let professoresId = null 
+let professoresId = null
 
-const getIdUrl=()=>{
+const getIdUrl = () => {
     const paramString = window.location.search
     const params = new URLSearchParams(paramString)
     professoresId = params.get('id')
     console.log(professoresId)
 }
 
-const buscarProfessor = async ()=>{
+const buscarProfessor = async () => {
     const response = await fetch(`http:///localhost:3000/professores/${professoresId}`)
     const professor = await response.json()
     return professor
 }
 
-const carregarFormularioProfessor = async (professor)=>{
-    document.getElementById('nome').value=professor.nome
-    document.getElementById('disciplina').value=professor.disciplina
-    document.getElementById('perfil').value=professor.perfil
+const carregarFormularioProfessor = async (professor) => {
+    document.getElementById('nome').value = professor.nome
+    document.getElementById('disciplina').value = professor.disciplina
+    document.getElementById('perfil').value = professor.perfil
     const toggleEdicao = document.getElementById("toggle-edicao")
     const ativo = professor.ativo === true
 
@@ -31,26 +31,26 @@ const carregarFormularioProfessor = async (professor)=>{
     }
 }
 
-const carregarDados = async ()=>{
+const carregarDados = async () => {
     getIdUrl()
     const professor = await buscarProfessor()
     carregarFormularioProfessor(professor)
 }
 
-const editarProfessor = async (professor)=>{
-    await fetch(`http:///localhost:3000/professores/${professoresId}`,{
-        method:'PUT',  
-        headers:{
-          'Accept': 'application/json, text/plain, */*',
-          'Content-Type': 'application/json'
+const editarProfessor = async (professor) => {
+    await fetch(`http:///localhost:3000/professores/${professoresId}`, {
+        method: 'PUT',
+        headers: {
+            'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json'
         },
-        body:JSON.stringify(professor)
-      })
-      window.location="listarProfessor.html"
+        body: JSON.stringify(professor)
+    })
+    window.location = "listarProfessor.html"
 }
 
 
-formulario.addEventListener('submit',(e)=>{
+formulario.addEventListener('submit', (e) => {
     e.preventDefault()
 
     const nome = formulario.elements['nome'].value
@@ -66,7 +66,7 @@ formulario.addEventListener('submit',(e)=>{
     }
 
     editarProfessor(professor)
- 
+
 })
 
 
