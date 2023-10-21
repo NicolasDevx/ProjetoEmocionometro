@@ -19,7 +19,6 @@ const mostrarProfessores = (professores) => {
             <button class="editarbtn" onclick="editarProfessor(${professores.id})"></button>
             <button class="excluirbtn" onclick="excluirProfessor(${professores.id})"></button>
             </td>
-
         </tr>
         `
         tabela.innerHTML = tabela.innerHTML + professoresHTML

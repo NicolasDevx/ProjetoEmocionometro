@@ -1,37 +1,37 @@
 {
   "professores": [
     {
-      "nome": "Arthur",
-      "disciplina": "ativo",
+      "nome": "teste",
+      "disciplina": "teste",
       "perfil": "Professor",
       "ativo": true,
       "id": 1
     },
     {
-      "nome": "Pedro",
-      "disciplina": "teste",
+      "nome": "teste4",
+      "disciplina": "Cobol",
       "perfil": "Professor",
       "ativo": true,
       "id": 2
     },
     {
-      "nome": "Tio Marcio",
-      "disciplina": "CEO",
-      "perfil": "Cordenador",
-      "ativo": true,
+      "nome": "breno",
+      "perfil": "Professor",
+      "disciplina": "seo",
+      "ativo": false,
       "id": 3
     },
     {
-      "nome": "Nicolas",
-      "disciplina": "teste4",
+      "nome": "teste4",
       "perfil": "Professor",
-      "ativo": true,
+      "disciplina": "ativo",
+      "ativo": false,
       "id": 4
     },
     {
-      "nome": "Jose",
-      "disciplina": "Cobol",
-      "perfil": "Professor",
+      "nome": "ativo",
+      "disciplina": "teste4",
+      "perfil": "Cordenador",
       "ativo": true,
       "id": 5
     }
@@ -48,6 +48,16 @@
       "turma": "sadfas",
       "ativo": false,
       "id": 2
+    }
+  ],
+  "usuarios": [
+    {
+      "nome": "Nicolas Vinicius",
+      "email": "nicolas.vinicius@outlook.com",
+      "celular": "16996237678",
+      "telefone": "16996237678",
+      "senha": "123",
+      "id": 1
     }
   ]
 }
