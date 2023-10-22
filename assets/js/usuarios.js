@@ -18,7 +18,7 @@ const login = async () => {
     const usuario = resultado.find(usuario => usuario.email === email && usuario.senha === senha)
 
     if (usuario) {
-        window.location.href = '../projetoEmocionometro/pages/loading.html'
+        window.location.href = './pages/loading.html'
     } else {
         alertaPersonalizado('Usuário ou Senha incorretos. Tente novamente.')
     }
