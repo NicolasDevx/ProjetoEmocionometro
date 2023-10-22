@@ -12,11 +12,6 @@ const login = async () => {
     const email = document.getElementById('login-email').value
     const senha = document.getElementById('login-senha').value
 
-    const botaoEntrar = document.querySelector('.botao-entrar')
-    if (email && senha) {
-        botaoEntrar.classList.add('habilitado')
-    }
-
     const apiURL = 'https://emocionomentro.onrender.com/usuarios'
     const response = await fetch(apiURL)
     const resultado = await response.json()
@@ -29,27 +24,9 @@ const login = async () => {
     }
 }
 
-const emailInput = document.getElementById('login-email')
-const senhaInput = document.getElementById('login-senha')
+const entrarBotao = document.querySelector('.botao-entrar')
+entrarBotao.addEventListener('click', login)
 
-emailInput.addEventListener('input', () => {
-    atualizarBotaoEntrar(emailInput, senhaInput)
-})
-senhaInput.addEventListener('input', () => {
-    atualizarBotaoEntrar(emailInput, senhaInput)
-})
-
-const atualizarBotaoEntrar = (emailInput, senhaInput) => {
-    const email = emailInput.value
-    const senha = senhaInput.value
-    const botaoEntrar = document.querySelector('.botao-entrar')
-
-    if (email && senha) {
-        botaoEntrar.classList.add('habilitado')
-    } else {
-        botaoEntrar.classList.remove('habilitado')
-    }
-}
 
 const senhaDigitada = document.getElementById('login-senha')
 const olho = document.getElementById('olho')

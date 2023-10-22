@@ -911,14 +911,6 @@ input:checked+.slider:before {
     display: block;
 }
 
-.botao-entrar {
-    background-color: gray;
-}
-
-.botao-entrar.habilitado {
-    background-color: #00c247;
-}
-
 .modal {
     display: none;
     position: fixed;
