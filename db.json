@@ -1,20 +1,6 @@
 {
   "professores": [
     {
-      "nome": "Arthur (Como é amigo?)",
-      "perfil": "Professor",
-      "disciplina": "HTML / CSS / JS",
-      "ativo": true,
-      "id": 2
-    },
-    {
-      "nome": "Pedro",
-      "perfil": "Professor",
-      "disciplina": "HTML / CSS / JS",
-      "ativo": true,
-      "id": 3
-    },
-    {
       "nome": "Perdiga",
       "perfil": "Professor",
       "disciplina": "HTML / CSS / JS",
@@ -34,6 +20,13 @@
       "disciplina": "Inglês",
       "ativo": true,
       "id": 6
+    },
+    {
+      "nome": "Arthur (Como é amigo?)",
+      "perfil": "Professor",
+      "disciplina": "HTML / CSS / JS",
+      "ativo": true,
+      "id": 7
     }
   ],
   "alunos": [
