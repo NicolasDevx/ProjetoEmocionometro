@@ -1,5 +1,5 @@
 const getProfessor = async () => {
-    const apiURL = await fetch('http://localhost:3000/professores')
+    const apiURL = await fetch('https://emocionomentro.onrender.com/professores')
     const professores = await apiURL.json()
     mostrarProfessores(professores)
 }
@@ -44,7 +44,7 @@ ordenar.addEventListener('click', () => {
 
 const ordenarNome = async () => {
     const alterarOrdem = ordenarAsc ? 'asc' : 'desc'
-    const apiURL = await fetch(`http://localhost:3000/professores?_sort=nome&_order=${alterarOrdem}`)
+    const apiURL = await fetch(`https://emocionomentro.onrender.com/professores?_sort=nome&_order=${alterarOrdem}`)
     const professores = await apiURL.json()
     mostrarProfessores(professores)
 

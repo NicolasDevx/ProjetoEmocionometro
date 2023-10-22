@@ -1,6 +1,6 @@
 const buscarAlunos = async () => {
   const buscarElemento = document.getElementById('buscarProf').value
-  const apiURL = `http://localhost:3000/alunos?nome_like=${buscarElemento}`
+  const apiURL = `https://emocionomentro.onrender.com/alunos?nome_like=${buscarElemento}`
   const response = await fetch(apiURL)
   const alunos = await response.json()
   mostrarAlunos(alunos)

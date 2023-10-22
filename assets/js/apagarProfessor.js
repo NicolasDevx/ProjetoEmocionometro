@@ -10,7 +10,7 @@ const excluirProfessor = (id, nome) => {
 
   confirmarExclusao.addEventListener("click", async () => {
     confirmarModal.style.display = "none"
-    await fetch(`http://localhost:3000/professores/${id}`, {
+    await fetch(`https://emocionomentro.onrender.com/professores/${id}`, {
       method: "DELETE",
     }).then(() => {
       getProfessor()

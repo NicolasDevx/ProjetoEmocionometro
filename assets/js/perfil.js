@@ -19,7 +19,7 @@ const mostrarDadosPessoais = () => {
         <button class="editarbtn""></button>
     `
 
-    const apiURL = 'http://localhost:3000/usuarios'
+    const apiURL = 'https://emocionomentro.onrender.com/usuarios'
     fetch(apiURL)
         .then((response) => response.json())
         .then((data) => {

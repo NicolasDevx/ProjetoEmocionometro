@@ -12,7 +12,7 @@ const login = async () => {
     const email = document.getElementById('login-email').value
     const senha = document.getElementById('login-senha').value
 
-    const apiURL = 'http://localhost:3000/usuarios'
+    const apiURL = 'https://emocionomentro.onrender.com/usuarios'
     const response = await fetch(apiURL)
     const resultado = await response.json()
     const usuario = resultado.find(usuario => usuario.email === email && usuario.senha === senha)
