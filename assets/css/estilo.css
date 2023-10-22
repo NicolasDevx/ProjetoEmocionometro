@@ -420,10 +420,10 @@ header {
 .tooltip-editar .tooltiptext {
     visibility: hidden;
     width: 60px;
-    background-color: rgba(0, 76, 232, 1);
-    color: #fff;
+    background-color: #fff;
+    color: #251be9;
     text-align: center;
-    border-radius: 6px;
+    border-radius: 15px;
     padding: 3px;
     position: absolute;
     z-index: 1;
@@ -432,6 +432,8 @@ header {
     transform: translateX(-50%);
     opacity: 0;
     transition: opacity 0.2s;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(153, 153, 153, 0.5);
 }
 
 .tooltip-editar .tooltiptext::before {
@@ -442,7 +444,7 @@ header {
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: rgba(0, 76, 232, 1) transparent transparent transparent;
+    border-color: #c6c5c5 transparent transparent transparent;
 }
 
 .tooltip-editar:hover .tooltiptext {
@@ -460,10 +462,10 @@ header {
 .tooltip-excluir .tooltiptext {
     visibility: hidden;
     width: 60px;
-    background-color: #f50e0e;
-    color: #fff;
+    background-color: #f7f7f7;
+    color: #f50e0e;
     text-align: center;
-    border-radius: 6px;
+    border-radius: 15px;
     padding: 3px;
     position: absolute;
     z-index: 1;
@@ -472,6 +474,8 @@ header {
     transform: translateX(-50%);
     opacity: 0;
     transition: opacity 0.2s;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(153, 153, 153, 0.5);
 }
 
 .tooltip-excluir .tooltiptext::before {
@@ -482,7 +486,7 @@ header {
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: #f50e0e transparent transparent transparent;
+    border-color: #c6c5c5 transparent transparent transparent;
 }
 
 .tooltip-excluir:hover .tooltiptext {
