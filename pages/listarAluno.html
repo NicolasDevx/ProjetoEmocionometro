@@ -71,7 +71,7 @@
     </nav>
     <div class="central-pagina">
         <h1> Usuários <span class="material-symbols-outlined">
-            chevron_right
+                chevron_right
             </span> Aluno</h1>
         <div class="btnBuscar-btnCadastrar">
             <div class="buscarProfessor">
@@ -89,11 +89,18 @@
         </div>
         <div class="listar-get">
             <div class="tabela">
+                <div id="confirmarModal" class="modal">
+                    <div class="modal-content">
+                        <p id="confirmaProfessor"></p>
+                        <button id="confirmarExclusao">Confirmar</button>
+                        <button id="cancelarExclusao">Cancelar</button>
+                    </div>
+                </div>
                 <div id="pesquisa"></div>
                 <table class="table">
                     <thead>
                         <th id="ordenar-nome">Nome <span class="material-symbols-outlined seta">
-                            arrow_drop_down
+                                arrow_drop_down
                             </span></th>
                         <th>Turma</th>
                         <th>Ativo</th>
@@ -105,4 +112,5 @@
         </div>
     </div>
 </body>
+
 </html>

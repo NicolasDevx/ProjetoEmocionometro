@@ -1,13 +1,6 @@
 {
   "professores": [
     {
-      "nome": "Tio Marcio",
-      "perfil": "Cordenador",
-      "disciplina": "FullStack",
-      "ativo": true,
-      "id": 1
-    },
-    {
       "nome": "Arthur (Como é amigo?)",
       "perfil": "Professor",
       "disciplina": "HTML / CSS / JS",
@@ -27,13 +20,6 @@
       "disciplina": "HTML / CSS / JS",
       "ativo": true,
       "id": 4
-    },
-    {
-      "nome": "Thalita",
-      "perfil": "Professor",
-      "disciplina": "Inglês",
-      "ativo": true,
-      "id": 5
     }
   ],
   "alunos": [

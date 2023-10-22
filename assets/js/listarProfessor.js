@@ -21,7 +21,7 @@ const mostrarProfessores = (professores) => {
             <span class="tooltiptext">Editar</span>
             </div>
             <div class="tooltip-excluir">
-            <button class="excluirbtn" onclick="excluirProfessor(${professores.id})"></button>
+            <button class="excluirbtn" onclick="excluirProfessor(${professores.id}, '${professores.nome}')"></button>
             <span class="tooltiptext">Excluir</span>
             </div>
             </td>
