@@ -452,7 +452,6 @@ header {
     opacity: 0.9;
 }
 
-
 .tooltip-excluir {
     position: relative;
     display: inline-block;
@@ -958,4 +957,15 @@ input:checked+.slider:before {
 
 #cancelarExclusao:hover {
     background-color: #999;
+}
+
+.esqueceu-senha{
+    text-align: start;
+}
+.esqueceu-senha h5{
+    color: rgba(66, 66, 66, 1);
+}
+
+.esqueceu-senha{
+    text-align: start;
 }
