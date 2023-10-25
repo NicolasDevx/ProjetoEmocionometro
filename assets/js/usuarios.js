@@ -8,8 +8,6 @@ function alertaPersonalizado(message) {
     }, 3000)
 }
 
-const entrarBotao = document.querySelector('.botao-entrar')
-
 const nomeUsuario = async () => {
     const apiURL = 'https://emocionomentro.onrender.com/usuarios'
     const response = await fetch(apiURL)
@@ -19,7 +17,7 @@ const nomeUsuario = async () => {
     if (resultado.length > 0) {
         nomeUsu.textContent = resultado[0].nome
     } else {
-        nomeUsu.textContent = "Nenhum usuário encontrado";
+        nomeUsu.textContent = "Nenhum usuário encontrado"
     }
     console.log(resultado)
 }
@@ -41,6 +39,10 @@ const login = async () => {
         alertaPersonalizado('Usuário ou Senha incorretos. Tente novamente.')
     }
 }
+
+
+const entrarBotao = document.querySelector('.botao-entrar')
+entrarBotao.addEventListener('click', login)
 
 
 const senhaDigitada = document.getElementById('login-senha')
