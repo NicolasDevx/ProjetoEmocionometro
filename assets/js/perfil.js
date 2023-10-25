@@ -1,23 +1,39 @@
+const botaoPessoais = document.getElementById('botao-pessoais')
+const botaoSenha = document.getElementById('botao-senha')
+
 const mostrarDadosPessoais = () => {
     const mostrarDados = document.getElementById('mostrar-Dados')
     mostrarDados.innerHTML = `
+        <div class="dados-titulo">
         <h1>Dados pessoais</h1>
+        </div>
+        <div class="dados-pessoais">
         <label class="label-perfil" for="nome">Nome</label>
         <input class="input-perfil" type="text" id="nome" readonly>
         <button class="editarbtn""></button>
+        </div>
         <hr>
+        <div class="dados-pessoais">
         <label class="label-perfil" for="email">Email</label>
         <input class="input-perfil" type="text" id="email" readonly>
         <button class="editarbtn""></button>
+        </div>
         <hr>
+        <div class="dados-pessoais">
         <label class="label-perfil" for="celular">Celular</label>
         <input class="input-perfil" type="text" id="celular" readonly>
         <button class="editarbtn""></button>
+        </div>
         <hr>
+        <div class="dados-pessoais">
         <label class="label-perfil" for="telefone">Telefone</label>
         <input class="input-perfil" type="text" id="telefone" readonly>
         <button class="editarbtn""></button>
+        </div>
     `
+    botaoPessoais.classList.add('botao-perfil-ativo')
+    botaoSenha.classList.remove('botao-perfil-ativo')
+    botaoSenha.classList.add('botao-perfil')
 
     const apiURL = 'https://emocionomentro.onrender.com/usuarios'
     fetch(apiURL)
@@ -46,7 +62,10 @@ const mostrarSenha = () => {
 
         <button class="botao" id="nova-senha">Salvar Nova Senha</button>
     `
+    botaoSenha.classList.add('botao-perfil-ativo')
+    botaoPessoais.classList.remove('botao-perfil-ativo')
+    botaoPessoais.classList.add('botao-perfil')
 }
 
-document.getElementById('botao-pessoais').addEventListener('click', mostrarDadosPessoais)
-document.getElementById('botao-senha').addEventListener('click', mostrarSenha)
+botaoPessoais.addEventListener('click', mostrarDadosPessoais)
+botaoSenha.addEventListener('click', mostrarSenha)

@@ -836,7 +836,6 @@ input:checked+.slider:before {
     width: 250px;
     height: 55px;
     color: #FFFFFF;
-    background: #F9E423;
     border: 5px;
     border-radius: 10px;
     margin-bottom: 15px;
@@ -844,7 +843,21 @@ input:checked+.slider:before {
     text-align: start;
     margin-left: 30px;
     margin-top: 20px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
 }
+
+.central-pagina .dados-perfil .centro-esquerda .botao-perfil {
+    background-color: rgb(211, 209, 209);
+    color: rgb(105, 105, 105);
+  }
+  .central-pagina .dados-perfil .centro-esquerda .botao-perfil-ativo {
+    background-color: #F9E423 !important;
+    color: white !important;
+  }
 
 .central-pagina .dados-perfil .centro-direita {
     width: 300px;
@@ -968,4 +981,11 @@ input:checked+.slider:before {
 
 .esqueceu-senha{
     text-align: start;
+}
+
+.dados-pessoais{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
 }
