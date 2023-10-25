@@ -42,8 +42,6 @@ const login = async () => {
     }
 }
 
-entrarBotao.addEventListener('click', login)
-
 
 const senhaDigitada = document.getElementById('login-senha')
 const olho = document.getElementById('olho')
