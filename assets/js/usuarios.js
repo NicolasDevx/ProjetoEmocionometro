@@ -8,6 +8,24 @@ function alertaPersonalizado(message) {
     }, 3000)
 }
 
+const entrarBotao = document.querySelector('.botao-entrar')
+
+const nomeUsuario = async () => {
+    const apiURL = 'https://emocionomentro.onrender.com/usuarios'
+    const response = await fetch(apiURL)
+    const resultado = await response.json()
+    const nomeUsu = document.getElementById("nomeUsuario")
+
+    if (resultado.length > 0) {
+        nomeUsu.textContent = resultado[0].nome
+    } else {
+        nomeUsu.textContent = "Nenhum usuário encontrado";
+    }
+    console.log(resultado)
+}
+
+nomeUsuario()
+
 const login = async () => {
     const email = document.getElementById('login-email').value
     const senha = document.getElementById('login-senha').value
@@ -24,7 +42,6 @@ const login = async () => {
     }
 }
 
-const entrarBotao = document.querySelector('.botao-entrar')
 entrarBotao.addEventListener('click', login)
 
 

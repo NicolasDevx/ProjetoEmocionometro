@@ -29,6 +29,13 @@ input {
 .logo-coracao {
     width: 100vh;
     right: 100vh;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .logo-coracao {
+        display: none;
+    }
 }
 
 .card-login {
@@ -78,6 +85,9 @@ input {
 .card-form {
     padding: 20px;
     width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 100%
 }
 
 .card-form h1 {
